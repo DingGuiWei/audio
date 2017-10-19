@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            background: url("木板.jpg");
+        }
+        h1{
+            color: #ffffff;
+            font-weight: 100;
+            font-size: 50px;
+            margin: 40px auto;
+            width: 300px;
+            text-align: center;
+        }
+        .box{
+            width: 850px;
+            height: 288px;
+            margin: 0 auto;
+            background-color: #333333;
+            padding-top: 22px;
+            border: 2px solid #000000;
+            border-radius: 10px;
+        }
+        .in{
+            width: 800px;
+            height: 250px;
+            background-color: #333333;
+            border: 10px solid #000000;
+            margin: 0 auto;
+            border-radius:10px ;
+        }
+        img{
+            width: 250px;
+            border: 5px solid #000000;
+            margin-top: 8px;
+            margin-left: 8px;
+            float: left;
+        }
+        .name ul{
+            list-style: none;
+            float: left;
+            margin-top: 8px;
+            margin-left: 15px;
+            color: #ffffff;
+        }
+        .name li:nth-of-type(n+2){
+            margin-top: 10px;
+            font-size: 13px;
+            color: #666666;
+        }
+        .name li:last-of-type{
+            font-size: 20px;
+
+        }
+        .name li:nth-of-type(3){
+            color: green;
+        }
+        .name1 ol li:nth-of-type(3){
+            color: #ffffff;
+        }
+        .name1 ol{
+            float: right;
+            margin-right: 100px;
+            color: #ffffff;
+
+        }
+        .name1 ol li{
+            margin-top: 10px;
+            color: #666666;
+        }
+        .xian{
+            width: 10px;
+            height: 185px;
+            background-color: #ffffff;
+            float: left;
+            margin-left: 130px;
+            display: inline-block;
+        }
+        .xian2{
+            width: 10px;
+            height: 35px;
+            float: left;
+            margin-left: -10px;
+            display: inline-block;
+            margin-top: 150px;
+            background-color: #666666;
+        }
+        .play{
+            width: 800px;
+            height: 50px;
+            background-color: #252525;
+            margin-top: 190px;
+            border-top: 10px solid #000000;
+            position: relative;
+            z-index: 0;
+        }
+        .play ul{
+            list-style: none;
+            position: relative;
+            z-index: 1;
+        }
+        .play li{
+            float: left;
+        }
+        /*循环*/
+        .xunhuan{
+            width: 100px;
+            height: 50px;
+            border-right: 1px solid #000000;
+            padding-top:13px ;
+        }
+        /*循环*/
+        .waixun{
+            width: 60px;
+            height: 20px;
+            background:url("QQ图片20171017195644.png") no-repeat;
+            margin: 0 auto;
+
+        }
+        /*声调*/
+        .shengdiao{
+            /*padding-top: 10px ;*/
+            width: 38px;
+            height: 35px;
+            margin-top: 5px;
+            background: url("QQ图片20171017200116.png") no-repeat;
+        }
+        /*喇叭*/
+        .laba{
+            background: url("QQ图片20171017200946.png") no-repeat;
+            width: 38px;
+            height: 35px;
+            margin-top: 5px;
+        }
+        /*音量滚动条*/
+        .gundong{
+            width: 200px;
+            height: 10px;
+            background-color:#ffffff;
+            margin-top: 15px;
+            margin-left: 5px;
+            position: relative;
+            border-radius: 5px;
+            float: left;
+        }
+        /*音量圆球*/
+        .qiu{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #666666;
+            position: absolute;
+            top: -5px;
+            left: 50px;
+            z-index: 1;
+        }
+        .qiu:hover{
+            cursor: pointer;
+            opacity: 0.8;
+        }
+        .blue{
+            width: 55px;
+            height: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: blue;
+            z-index: 0;
+        }
+        .play li:hover{
+            opacity: 0.7;
+            cursor: pointer;
+        }
+        .a{
+            width: 20px;
+            height: 35px;
+            color: red;
+            /*border: 1px;*/
+        }
+        
+    </style>
+</head>
+<body>
+<h1>音乐播放器</h1>
+<section>
+<div class="box">
+<div class="in">
+    <img src="aaaaaaaaaa.jpg" alt=""/>
+    <div class="name">
+    <ul>
+        <li>小二郎</li>
+        <li>雷迪嘎嘎</li>
+        <li>小嘛小二郎</li>
+        <li>背着那书包上学堂</li>
+        <li>不怕太阳晒</li>
+        <li>★ ★ ★ ★ ☆</li>
+    </ul>
+    </div>
+
+    <div class="bao5">
+    <div class="xian"></div>
+    <div class="xian2"></div>
+    </div>
+
+    <div class="name1">
+        <ol>
+            <li>猴哥</li>
+            <li>浪晃浪</li>
+            <li>小二郎</li>
+            <li>让我们荡起双桨</li>
+            <li>滑板鞋</li>
+            <li>我要吃饭之歌</li>
+        </ol>
+    </div>
+    <div class="play">
+          <ul>
+              <li class="xunhuan">
+                  <div class="waixun"></div>
+              </li>
+              <li class="shengdiao">
+              </li>
+              <li class="laba" id="laba"></li>
+              <li class="gundong" id="gundong">
+                  <audio src="http://dl.stream.qqmusic.qq.com/C400001SgbdY3BJLAM.m4a?vkey=40D8242CDB86E6E20674D3388AF57006B672A5211570DF6E07865D39CE451F01BB138B4AB2ACC68D3CD713D0907A011F17AB085338F0A2FC&guid=8807485844&uin=0&fromtag=66" loop="loop"></audio>
+                  <div class="qiu" id="qiu"></div>
+                  <div class="blue" id="blue"></div>
+              </li>
+              <li class="a"></li>
+              <li></li>
+              <li><input type="range" value="10" min="0" max="20" class="b"/></li>
+              <li class="q"></li>
+              <li><button>播放/暂停</button></li>
+          </ul>
+    </div>
+</div>
+</div>
+</section>
+</body>
+<script>
+    var button=document.querySelector('button')
+        var li=document.querySelectorAll('.play ul li') ;
+//        console.log(li[2]);
+        var qiu=document.getElementById('qiu');
+        var audio=document.querySelector('audio');
+        var q=document.querySelector('.q');
+        var a=document.querySelector('.a');
+        var blue=document.getElementById('blue');
+        var gundong=document.getElementById('gundong');
+        var laba=document.getElementById('laba');
+        var b=document.querySelector('.b');
+    gundong.onclick=function(even){
+//        console.log(even.x);
+        qiu.style.left=even.x-540+'px';
+        blue.style.width=even.x-540+'px';
+        var index=even.x-540;
+        var str='';
+        str+=index;
+        console.log(str);
+        a.innerHTML=str
+    };
+//    gundong.addEventListener('mouseUp',function(){
+//        a.style.color='#ffffff'
+//
+//        })
+        b.addEventListener('change',function(){
+            var index1=this.value;
+//            console.log(index1)
+            li[5].innerHTML=index1;
+            li[5].style.color='red'
+        });
+            laba.onclick= function () {
+                if(audio.paused){
+                    audio.play()
+                }else{
+                    audio.pause()
+                }
+            };
+    li[6].style.float='right';
+    li[5].style.float='right';
+//        li[5].style.width='20px'
+    li[6].style.marginTop='10px';
+
+        q.style.float='right';
+    li[8].style.marginLeft='70px';
+    button.style.width='100px';
+    button.style.height='40px';
+    button.addEventListener('click',function(){
+        if(audio.paused){
+            audio.play()
+        }else{
+            audio.pause()
+        }
+    });
+    //下面是歌词滚动条
+    var xian=document.querySelector('.xian');
+    var xian2=document.querySelector('.xian2');
+    var bao5=document.querySelector('.bao5');
+            bao5.onclick=function(event){
+//                console.log(event.y)
+                xian2.style.marginTop=event.y-200+'px'
+            };
+
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
